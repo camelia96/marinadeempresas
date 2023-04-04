@@ -1199,7 +1199,7 @@ footer a {
 #container-admin #menu-admin form input {
     border: none;
     height: 4vh;
-    width: 20vw;
+    width: 20vw; 
     padding-left: 3%;
 }
 #container-admin #menu-admin form input::placeholder {
