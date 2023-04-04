@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil - Angels Conecta</title>
+    <title>Admin - Angels Conecta</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
@@ -21,7 +23,7 @@
     <!-- Javascript -->
     <script src="assets/js/header.js"></script>
     <script src="assets/js/footer.js"></script>
-    <script src="assets/js/startups.js"></script>
+    <script src="assets/js/admin.js"></script>
 
 
     <!-- Flat icon -->
@@ -47,75 +49,92 @@
                 <p class="titulo">Ticket inicial</p>
                 <div></div>
                 <div></div>
+                <div></div>
             </div>
             <div class="perfiles">
                 <div class="perfil">
                     <p class="perfil-dato">Adara</p>
                     <p class="perfil-dato">adara@mail.es</p>
                     <p class="perfil-dato">2k - 1000k</p>
+                    <div class="verMas">
+                        <button class="boton-verMas" id="verMas-1">Ver más</button>
+                    </div>
                     <div class="editar">
-                        <button class="boton-icono"><i class="fi fi-rr-edit"></i></button>
+                        <button class="boton-icono" id="editar-1"><i class="fi fi-rr-edit"></i></button>
                     </div>
                     <div class="eliminar">
-                        <button class="boton-icono"><i class="fi fi-rr-trash"></i></button>
-                    </div>
-                </div>
-                <div class="perfil">
-                    <p class="perfil-dato">Adara</p>
-                    <p class="perfil-dato">adara@mail.es</p>
-                    <p class="perfil-dato">2k - 1000k</p>
-                    <div class="editar">
-                        <button class="boton-icono"><i class="fi fi-rr-edit"></i></button>
-                    </div>
-                    <div class="eliminar">
-                        <button class="boton-icono"><i class="fi fi-rr-trash"></i></button>
-                    </div>
-                </div>
-                <div class="perfil">
-                    <p class="perfil-dato">Adara</p>
-                    <p class="perfil-dato">adara@mail.es</p>
-                    <p class="perfil-dato">2k - 1000k</p>
-                    <div class="editar">
-                        <button class="boton-icono"><i class="fi fi-rr-edit"></i></button>
-                    </div>
-                    <div class="eliminar">
-                        <button class="boton-icono"><i class="fi fi-rr-trash"></i></button>
-                    </div>
-                </div>
-                <div class="perfil">
-                    <p class="perfil-dato">Adara</p>
-                    <p class="perfil-dato">adara@mail.es</p>
-                    <p class="perfil-dato">2k - 1000k</p>
-                    <div class="editar">
-                        <button class="boton-icono"><i class="fi fi-rr-edit"></i></button>
-                    </div>
-                    <div class="eliminar">
-                        <button class="boton-icono"><i class="fi fi-rr-trash"></i></button>
-                    </div>
-                </div>
-                <div class="perfil">
-                    <p class="perfil-dato">Adara</p>
-                    <p class="perfil-dato">adara@mail.es</p>
-                    <p class="perfil-dato">2k - 1000k</p>
-                    <div class="editar">
-                        <button class="boton-icono"><i class="fi fi-rr-edit"></i></button>
-                    </div>
-                    <div class="eliminar">
-                        <button class="boton-icono"><i class="fi fi-rr-trash"></i></button>
-                    </div>
-                </div>
-                <div class="perfil">
-                    <p class="perfil-dato">Adara</p>
-                    <p class="perfil-dato">adara@mail.es</p>
-                    <p class="perfil-dato">2k - 1000k</p>
-                    <div class="editar">
-                        <button class="boton-icono"><i class="fi fi-rr-edit"></i></button>
-                    </div>
-                    <div class="eliminar">
-                        <button class="boton-icono"><i class="fi fi-rr-trash"></i></button>
+                        <button class="boton-icono" id="eliminar-1"><i class="fi fi-rr-trash"></i></button>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Dialog founder datos -->
+    <div id="dialog-verMas" title="Datos perfil">
+        <div class="col-dialog">
+            <div class="dato">
+                <p class="titulo">Empresa</p>
+                <p class="contenido">Adara</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Web</p>
+                <p class="contenido">https://adara.vc</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">País</p>
+                <p class="contenido">España/ Luxemburgo</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Tipo</p>
+                <p class="contenido">Venture Capital</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Ticket inicial</p>
+                <p class="contenido">2k - 25k</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Email</p>
+                <p class="contenido">jbaron@adara.vc</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Otros criterios</p>
+                <p class="contenido">Otros criterios</p>
+            </div>
+        </div>
+        <div class="col-dialog">
+            <div class="dato">
+                <p class="titulo">Fases</p>
+                <div class="pastillas">
+                    <p class="pastilla">Seed</p>
+                    <p class="pastilla">Pre Seed</p>
+                    <p class="pastilla">Late Seed/ Pre Serie A</p>
+                    <p class="pastilla">Serie A</p>
+                </div>
+            </div>
+            <div class="dato">
+                <p class="titulo">Sectores</p>
+                <div class="pastillas">
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                    <p class="pastilla">Sector</p>
+                </div>
+            </div>
+
         </div>
     </div>
 

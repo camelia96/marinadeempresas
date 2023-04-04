@@ -88,7 +88,7 @@ nav .titulo {
     margin: 0!important;
    }
 
-   #filtros input, select, button, .sliderTicket {
+   #filtros input,#filtros  select, #filtros button, .sliderTicket {
     margin-bottom: 5%!important;
    }
 
@@ -448,6 +448,67 @@ nav .titulo {
     }
 
     #container-admin .editar {
+        margin: 5% 0;
+    }
+
+    /* Dialogos  */
+    .ui-widget.ui-widget-content {
+        width: 80vw!important;
+        min-height: 50vh;
+    }
+
+    .ui-draggable .ui-dialog-titlebar {
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        font-size: 4.5vw!important;
+    }
+    .ui-dialog .ui-dialog-titlebar-close {
+        min-height: 50%!important;
+        min-width: 9%!important;
+    }
+    .ui-button .ui-icon {
+
+        background-image: url(../img/cancelar.png)!important;
+        background-size: 80%!important;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Dialog Ver Más */
+    #dialog-verMas {
+        flex-direction: column;
+        font-size: 3vw!important;
+    }
+
+    #dialog-verMas .col-dialog {
+        width: 100%!important;
+    }
+
+    /* Editar perfil */
+    #container-editar form {
+        flex-direction: column;
+        font-size: 5vw!important;
+    }
+
+    #container-editar input {
+        width: auto!important;
+        font-size: 4vw!important;
+        height: 5vh!important;
+        
+    }
+    #container-editar label {
+        width: 60%!important;
+    }
+
+    #container-editar h1 {
+        font-size: 7vw;
+    }
+
+    #container-editar #guardar-perfil{
+        font-size: 5vw!important;
+        width: auto!important;
+        padding: 2% 3%!important;
         margin: 5% 0;
     }
 
@@ -1002,7 +1063,7 @@ footer a {
 #container-perfil form > div {
     display: flex;
 }
-#container-perfil form input, textarea{
+#container-perfil form input,#container-perfil form textarea{
     border: none;
     width: 100%;
     height: 4vh;
@@ -1177,7 +1238,7 @@ footer a {
 #container-admin #menu-admin button {
     border: none;
     font-family: 'Stratos';
-    padding: 1.5% 1%;
+    padding: 0.5% 1%;
     font-weight: bold;
     font-size: 1vw;
     width: 7vw;
@@ -1227,7 +1288,7 @@ footer a {
     width: 8vw;
 }
 #container-admin .titulos > div, .perfil > div {
-    width: 3vw;
+    width: 4vw;
 }
 
 #container-admin .titulos {
@@ -1236,6 +1297,7 @@ footer a {
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom: 3px solid var(--azul-extra);
+    color: var(--azul-medio);
 }
 
 #container-admin .perfil:nth-child(odd) {
@@ -1252,3 +1314,168 @@ footer a {
 }
 
 
+#container-admin .boton-verMas {
+    background-color: var(--azul-medio);
+    border: none;
+    padding: 1% 3%;
+    color: var(--blanco);
+    font-family: 'Stratos';
+    font-weight: bold;
+    width: 6vw;
+    height: 3.5vh;
+    font-size: 1vw;
+}
+
+/* Dialog GENERAL */
+.ui-widget.ui-widget-content {
+    font-family: 'Stratos';
+    font-size: 1vw;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid var(--gris-masOscuro)!important;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    border: none;
+    border-radius: none;
+    background: none;
+    padding: 2% 5%!important;
+    font-size: 1.5vw;
+    border-bottom: 2px solid var(--gris-masOscuro);
+    color: var(--azul-medio);
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-radius: 20px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    border-radius: 30px;
+    top: 35%!important;
+    height: 60%!important;
+    width: 5%!important;
+    margin-right: 2%!important;
+}
+
+.ui-button .ui-icon {
+
+    background-image: url(../img/cancelar.png)!important;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ui-button {
+    background-color: var(--azul-medio)!important;
+    border: none!important;
+}
+
+/* Dialog ver más - inversores */
+#dialog-verMas {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-size: 1vw;
+}
+
+#dialog-verMas .col-dialog {
+    width: 50%;
+}
+
+#dialog-verMas .dato, .pastillas {
+    display: flex;
+    gap: 3%;
+}
+#dialog-verMas .col-dialog:last-child > .dato {
+    flex-direction: column;
+}
+
+
+#dialog-verMas .titulo {
+    margin-bottom: 0;
+    margin-right: 3%;
+}
+#dialog-verMas .pastillas {
+    flex-wrap: wrap;
+}
+
+#dialog-verMas .pastilla {
+    background-color: var(--gris-claro);
+    padding: 2% 3%;
+    font-weight: bold;
+    border-radius: 30px;
+    margin: 2% 0;
+}
+
+#dialog-verMas .titulo {
+    color: var(--gris-oscuro);
+    font-weight: 500;
+}
+
+#dialog-verMas .contenido {
+    color: var(--gris-masOscuro);
+    font-weight: bold;
+}
+
+
+/* Dialog ver más - startups */
+
+
+/* Editar perfil */
+#container-editar {
+    margin: 3% 5%;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    min-height: auto;
+}
+#container-editar form{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    margin:  3% 0;
+}
+#container-editar .col-editar {
+    width: 100%;
+}
+
+#container-editar .dato {
+    display: flex;
+    align-items: start;
+    margin-bottom: 5%;
+    justify-content: space-evenly;
+}
+
+#container-editar label {
+    color: var(--gris-oscuro);
+    width: 10vw;
+}
+
+#container-editar input, #container-editar textarea {
+    border: none;
+    margin-left: 2%;
+    font-family: 'Stratos';
+}
+
+#container-editar input {
+    height: 3vh;
+    width: 12vw;
+    padding: 0 3%;
+}
+
+#container-editar #guardar-perfil {
+    border: none;
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+    font-weight: bold;
+    font-family: 'Stratos';
+    width: 10vw;
+    font-size: 1vw;
+    padding: 1% 2%;
+}
