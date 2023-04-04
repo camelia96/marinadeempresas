@@ -33,7 +33,340 @@ a {
     text-decoration: none;
 }
 
+button {
+    
+    font-weight: bold;
+    font-family: 'Stratos';
+    border: none;
+}
+
+button:hover  {
+    cursor: pointer;
+}
+
 /* Responsive */
+
+/* Móviles y tablets */
+@media only screen and (max-width: 992px) {
+    /* Nav */
+    nav .botones {
+       width: 50%!important;
+       font-size: 3vw;
+   }
+
+   nav img {
+    width: 50%!important;
+   }
+
+   nav .botones > p {
+       min-width: 24vw;
+       justify-content: end;
+       margin-right: 10%;
+   }
+
+   /*Menú azul */
+   #menu-azul {
+    font-size: 3vw!important;
+   }
+
+   #menu-azul p, a {
+    width: 50%;
+    justify-content: center;
+   }
+
+   /* Filtros */
+   #filtros form {
+    margin: 7% 0;
+   }
+   #filtros form .fila ,  #filtros form .fila > *{
+    width: 100%;
+    margin-bottom: 3%;
+    font-size: 3vw!important;
+   }
+
+   #filtros form .fila > *:last-child{
+    margin-bottom: 0;
+   }
+
+   #filtros #buscador {
+    margin-bottom: 0;
+   }
+   #filtros form .fila:last-child {
+    flex-direction: column;
+    margin-bottom: 0;
+   }
+
+
+   #filtros form .fila:last-child > * {
+    width: 100%;
+   }
+
+   /* Founders */
+   #founders {
+    width: auto!important;
+    margin: 0 2% 2% 2%!important;
+   }
+
+   #founders .empresa{
+    font-size: 10vw!important;
+   }
+
+   #founders .perfil{    
+    font-size: 6vw!important;
+    margin: 4% 0!important;
+    min-width: 80%!important;
+    gap: 6%;
+    justify-content: start!important;
+    align-items: center;
+   }
+
+   #founders .founder {
+    padding: 5%!important;
+   }
+
+   #founders .fila:first-child {
+    width: 100%!important;
+    flex-direction: column;
+    align-items: start!important;
+    min-height: 15vh;
+   }
+
+   #founders .fila:last-child {
+    margin: 5% 0;
+   }
+   #founders .sector, #founders button {
+    font-size: 4vw!important;
+    min-width: 20%;
+    height: 3vh;
+   }
+
+   #founders .sector {
+    margin: 5% 0!important;
+   }
+
+   #founders button {
+    min-width: 100%;
+    margin-left: 0!important;
+    min-height: 5vh;
+   }
+
+   #founders .subtitulo {
+    font-size: 5vw!important;
+   }
+
+   #founders .ayudas{
+    
+    justify-content: start!important;
+    flex-wrap: wrap;
+   }
+
+   #founders .ayuda{
+    font-size: 4vw!important;
+    margin: 1% 2% 1% 0;
+    text-align: center;
+    padding: 1% 4%!important;
+   }
+
+   /* Ventajas Founders */
+   #container-ventajas {
+    flex-direction: column;
+    margin: 5%!important;
+   }
+
+   #container-ventajas .col-ventaja {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8%;
+   }
+
+   #container-ventajas .titulo {
+    font-size: 7vw;
+   }
+   #container-ventajas .subtitulo {
+    min-width: 100%;
+    text-align: center;
+    font-size: 3.5vw!important;
+   }
+
+   #container-ventajas ul {
+    padding: 0;
+    font-size: 4.5vw!important;
+    width: 85%;
+    
+   }
+
+   #container-ventajas .acceder {
+    
+    font-size: 5vw!important;
+    margin: 5%;
+   }
+
+   /* Perks */
+   #container-perks {
+    flex-direction: column;
+    align-items: center;
+   }
+
+   #container-perks .perk {
+    width: 80%!important;
+    margin-bottom: 10%!important;
+   }
+
+   #container-perks .perk-button {
+    font-size: 5vw!important;
+   }
+
+   /* Dialog Perks */
+   .ui-widget.ui-widget-content {
+        width: 80%!important;
+        top: 10%!important;
+        height: auto!important;
+        font-size: 3.5vw!important;
+    }
+
+    #dialog-perk .sector , #dialog-perk .subtitulo, .ui-dialog .ui-dialog-title {
+        font-size: 5vw!important;
+    }
+
+    
+    #dialog-perk .sector {
+        display: flex;
+        align-items: center;
+    }
+
+    
+    #dialog-perk span {
+        font-size: 3vw!important;
+    }
+
+    
+    .ui-dialog .ui-dialog-titlebar-close {
+        background-image: url(../img/cancelar.png);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        top: 40%!important;
+        max-height: 25px!important;
+        max-width: 25px!important;
+        margin-right: 2%!important;
+    }
+
+    /* Reserva puesto */
+    #container-reserva .container {
+        margin: 10%!important;
+        padding: 10%!important;
+    }
+    #container-reserva .reserva {
+        flex-direction: column;
+        align-items: start!important;
+        margin-bottom: 10%;
+        min-height: 30vh;
+    }
+
+    #container-reserva .reserva i {
+        font-size: 7vw!important;
+        margin: 0!important;
+    }
+
+        
+    #container-reserva h6 {
+        font-size: 4vw!important;
+        margin-bottom: 5%!important;
+    }
+
+    /* Perfil founder */
+    #container-perfil .perfil {
+        min-height: auto!important;
+    }
+
+    #container-perfil .contacto-perfil > div {
+        flex-wrap: wrap;
+        align-items: center!important;
+    }
+
+    #container-perfil .columna, .otros-perfil {
+        flex-direction: column;
+        align-items: start!important;
+    }
+
+    #container-perfil .tipo-perfil > div>p {
+        margin-bottom: 0;
+
+    }
+    #container-perfil .web button {
+        font-size: 4vw!important;
+        min-width: 20vw;
+        min-height: 5vh;
+    }
+
+    #container-perfil .linkedin i {
+        font-size: 10vw!important;
+    }
+
+    #container-perfil .titulo {
+        font-size: 10vw!important;
+    }
+
+    #container-perfil .nombre-perfil , .tipo-perfil > div, .contacto-perfil, .descripcion, .ubicacion, .otros-perfil, .sector, .col-perfil .subtitulo {
+        font-size: 4.5vw!important;
+        margin-top: 3%;
+    }
+
+    #container-perfil .contacto-perfil, .sector {
+        margin-bottom: 6%;
+    }
+
+    #container-perfil .ubicacion, .otros-perfil {
+        margin-bottom: 10%;
+    }
+
+    #container-perfil .col-perfil {
+        width: 100%!important;
+    }
+
+    #container-perfil .facturacion, .empleados, .telefono, .whatsapp {
+        width: 100%!important;
+        margin-bottom: 5%!important;
+    }
+
+    #container-perfil .ayuda, .contenido {
+        font-size: 4vw!important;
+    }
+
+    #container-perfil .otra-ayuda-perfil > .subtitulo {
+        margin-top: 10%;
+    }
+
+
+    #container-perfil form {
+        width: 80%!important;
+    }
+    #container-perfil .form-contacto {
+        margin: 10% 0!important;
+    }
+    #container-perfil .form-contacto input, textarea, h4, button   {
+        font-size: 3vw!important;
+    }
+    #container-perfil .form-contacto {
+        margin: 10% 0!important;
+    }
+   /* Footer */ 
+   footer {
+    text-align: center;
+    font-size: 2.5vw!important;
+   }
+}
+
+/* Móviles sólo */
+@media only screen and (max-width: 630px) {
+    
+}
+
+
+/* Tablets y similares */
 
 
 
@@ -45,7 +378,8 @@ nav {
     align-items: center;
     background: var(--negro);
     padding: 1% 5%;
-    font-size: 1vw;
+    font-size: 1.3vw;
+    height: 10vh;
 }
 
 nav img {
@@ -61,7 +395,7 @@ nav .botones {
 }
 
 nav .botones p {
-    width: 8vw;
+    width: 12vw;
     display: flex;
 }
 
@@ -196,9 +530,9 @@ nav .botones i {
 
 
 #founders .perfil {
-    width: 25vw;
+    width: 30vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 1.2vw;
     font-weight: 800;
     margin: 0 5%;
@@ -221,10 +555,8 @@ nav .botones i {
 }
 
 #founders .fila > button {
-    border: none;
     background-color: var(--azul-medio);
     color: var(--blanco);
-    font-family: 'Stratos';
     font-size: 1vw;
     padding: 1%;
     width: 7vw;
@@ -254,6 +586,10 @@ nav .botones i {
 #founders .ayudas {
     display: flex;
     justify-content: space-between;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 2%;
 } 
 
 #founders .ayuda {
@@ -263,6 +599,449 @@ nav .botones i {
     padding: 0.5% 1.5%;
     color: var(--gris-oscuro);
     font-weight: 600;
+}
+
+
+/* Ventajas Founders */
+#container-ventajas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin: 0 5%;
+}
+
+#container-ventajas .col-ventaja {
+    width: 50%;
+}
+#container-ventajas img {
+    width: 100%;
+}
+
+#container-ventajas h1 {
+    font-size: 3vw;
+    color: var(--azul-medio);
+}
+
+#container-ventajas .subtitulo {
+    font-size: 1.2vw;
+    width: 80%;
+}
+
+#container-ventajas ul {
+    font-size: 1.7vw;
+    list-style-type: none;
+    margin: 6% 0;
+}
+
+#container-ventajas .ventaja, .ventaja > i {
+    display: flex;
+    align-items: center;
+    
+}
+
+#container-ventajas i {
+    margin-right: 2%;
+    color: var(--azul-medio);
+}
+
+
+#container-ventajas .acceder {
+    border: none;
+    background-color: var(--azul-fuerte);
+    color: var(--blanco);
+    padding: 1.5% 3%;
+    font-size: 1vw;
+    font-family: 'Stratos';
+    font-weight: bold;
+}
+
+/* Perks */
+#container-perks {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 5%;
+}
+
+#container-perks .perk {
+    width: 27vw;
+    margin-bottom: 5%;
+}
+
+#container-perks .perk-container {
+    height: 15vh;
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background: url('https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/lwJmiCjk3Di1teX0NhWr/pub/Dh2rrrNHRbLkP4zshZMc.png') center center;
+    background-size: cover;
+}
+
+#container-perks .perk-button {
+    width: 100%;
+    background-color: var(--gris-azulado);
+    padding: 4% 5%;
+    color: var(--blanco);
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+/* Dialog Perk */
+#dialog-perk {
+    margin: 3%;
+}
+
+#dialog-perk .sector {
+    font-size: 1.2vw;
+    margin-bottom: 5%;
+}
+#dialog-perk .sector span{
+    background-color: var(--azul-bajo);
+    color: var(--negro);
+    font-weight: bold;
+    padding:1% 2%;
+    border-radius: 30px;
+    margin-left: 3%;
+    font-size: 0.9vw;
+}
+
+#dialog-perk .subtitulo {
+    font-weight: bold;
+    margin-top: 5%;
+    font-size: 1.2vw;
+}
+
+#dialog-perk .botones {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#dialog-perk .botones button {
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+    padding: 1.5% 3%;
+    margin-right: 4%;
+}
+
+/* Dialog GENERAL */
+.ui-widget.ui-widget-content {
+    font-family: 'Stratos';
+    font-size: 1vw;
+}
+
+.ui-widget.ui-widget-content {
+    border: none!important;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    border: none;
+    border-radius: none;
+    background: none;
+    padding: 2% 5%!important;
+    font-size: 1.5vw;
+    border-bottom: 2px solid var(--gris-masOscuro);
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-radius: 20px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    background-image: url(../img/cancelar.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    top: 40%!important;
+    height: 35px!important;
+    width: 35px!important;
+    margin-right: 2%!important;
+}
+
+/* Reserva de puestos */
+#container-reserva {
+    margin: 5% 0;
+    position: relative;
+    min-height: auto;
+}
+#container-reserva .container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 5%;
+    background: var(--gris-medio);
+    border-radius: 30px;
+    padding: 3%;
+}
+#container-reserva .titulo {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#container-reserva > form, h2, i, .reserva {
+    display: flex;
+    align-items: center;
+}
+
+#container-reserva i {
+    margin-left: 2%;
+}
+
+#container-reserva i {
+    margin-left: 1%;
+}
+#container-reserva h2 {
+    margin-top: 0;
+}
+
+#container-reserva  form, .reserva {
+    width: 100%;
+}
+
+#container-reserva .reservas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#container-reserva form {
+    justify-content: center;
+}
+
+#container-reserva .reserva {
+    justify-content: space-evenly;
+}
+
+#container-reserva .reserva i{
+    font-size: 2vw;
+    color: var(--gris-masOscuro);
+}
+
+#container-reserva input {
+    border: none;
+    padding: 1% 3%;
+    font-family: 'Stratos';
+}
+
+#container-reserva input[type="date"] {
+    min-width: 12vw;
+}
+
+#container-reserva input[type="time"] {
+    min-width: 5vw;
+}
+
+#container-reserva h6 {
+    font-size: 1.5vw;
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--azul-medio);
+}
+
+/* Perfil Founders */
+#container-perfil .perfil {
+    margin: 5% 5%;
+    min-height: 60vh;
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container-perfil .titulo {
+    font-size: 3.5vw;
+    color: var(--azul-fuerte);
+    font-weight: bold;
+    margin: 0;
+}
+
+#container-perfil .nombre-perfil {
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+
+
+#container-perfil .nombre-perfil >p{
+   margin: 1% 0;
+}
+
+
+
+#container-perfil .nombre-perfil .cargo {
+    color: var(--azul-medio);
+}
+
+#container-perfil .tipo-perfil > div >p:first-child {
+    color: var(--gris-azulado);
+    margin-top: 0;
+}
+
+#container-perfil .tipo-perfil > div>p:last-child, .telefono, .whatsapp {
+    color: var(--gris-oscuro);
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#container-perfil .contacto-perfil > div, .otros-perfil {
+    gap: 4.5%!important;
+    align-items: start;
+}
+#container-perfil .linkedin i{
+    font-size: 2vw;
+}
+
+#container-perfil .linkedin, .web {
+    margin-top: 0;
+}
+
+#container-perfil .telefono, .whatsapp {
+    width: 20%;
+    margin: 0;
+}
+
+#container-perfil .web button {
+    background: var(--azul-medio);
+    color: var(--blanco);
+    padding: 4% 3%;
+    width: 6vw;
+    font-size: 1vw;
+}
+
+#container-perfil .linkedin i, .telefono i, .whatsapp i {
+    color: var(--azul-medio);
+}
+
+#container-perfil .columna {
+    margin-top: 2%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#container-perfil .col-perfil {
+    width: 48%;
+}
+
+
+#container-perfil .nombre-perfil, .tipo-perfil > div, .contacto-perfil > div, .telefono, .whatsapp, .ubicacion, .otros-perfil, .ayudas{
+    display: flex;
+    align-items: center;
+    gap: 1.5%;
+}
+
+
+#container-perfil .descripcion, .ubicacion {
+    color: var(--gris-masOscuro);
+}
+#container-perfil  .ubicacion {
+    font-weight: bold;
+}
+
+
+#container-perfil .otros-perfil {
+    color: var(--gris-oscuro);
+}
+
+#container-perfil .otros-perfil > *:not(.sector) {
+    width: 40%;
+}
+
+#container-perfil .otros-perfil  span{
+    color: var(--gris-masOscuro);
+    font-weight: bold;
+    margin-left: 1%;
+}
+
+
+#container-perfil .sector  {
+    border-radius: 30px;
+    background-color: var(--azul-aux);
+    font-weight: bold;
+    color: var(--blanco);
+    padding: 1% 3%;
+    font-size: 0.8vw;
+}
+
+#container-perfil .col-perfil .subtitulo {
+    font-size: 1.3vw;
+    color: var(--gris-oscuro);
+}
+#container-perfil .ayudas-perfil .subtitulo {
+    margin-top: 0%;
+}
+
+#container-perfil .ayudas {
+    flex-wrap: wrap;
+}
+
+#container-perfil .ayuda {
+    background-color: var(--blanco);
+    padding: 0.5% 3%;
+    border-radius: 30px;
+    margin-bottom: 1%;
+    font-size: 0.8vw;
+    color: var(--gris-masOscuro);
+}
+
+#container-perfil .contenido {
+    color: var(--gris-masOscuro);
+}
+
+
+
+#container-perfil .form-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: normal;
+    color: var(--gris-masOscuro);
+    margin: 5% 0;
+}
+#container-perfil form {
+    width: 50%;
+}
+#container-perfil h4 {
+    font-size: 1.5vw;;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+#container-perfil form > div {
+    display: flex;
+}
+#container-perfil form input, textarea{
+    border: none;
+    width: 100%;
+    height: 4vh;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    padding: 0.5% 3%;
+    font-family: 'Stratos';
+    font-size: 0.8vw;
+    background: var(--gris-medio);
+}
+
+#container-perfil textarea {
+    padding: 2% 3%;
+    height: 13vh;
+    margin-bottom: 0;
+}
+
+#container-perfil .form-contacto button {
+    background-color: var(--azul-medio);
+    padding: 1% 2%;
+    font-size: 1vw;
+    color: var(--blanco);
+    margin-top: 4%;
 }
 
 
@@ -282,3 +1061,6 @@ footer p {
 footer a { 
     color: var(--blanco);
 }
+
+
+
