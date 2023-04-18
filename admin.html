@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Founders</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <!-- Jquery -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+
+    <!-- Jquery UI -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css">
+
+    <!-- Javascript -->
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/menu-azul.js"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/admin.js"></script>
+
+
+    <!-- Flat icon -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+</head>
+<body>
+    <div id="container-admin">
+        <div id="menu-admin">
+            <p>Lista de Founders</p>
+            <form>
+                <input type="text" name="" id="" placeholder="Busca un nombre">
+                <button class="boton-icono"><i class="fi fi-rr-search"></i></button>
+            </form>
+        </div>
+        <div id="lista">
+            <div class="titulos">
+                <p class="titulo">Empresa</p>
+                <p class="titulo">Nombre</p>
+                <p class="titulo">Apellidos</p>
+                <p class="titulo">Validado</p>
+                <p class="titulo">Baja</p>
+                <div> </div>
+                <div> </div>
+                <div> </div>
+            </div>
+            <div class="perfiles">
+                <div class="perfil">
+                    <p class="perfil-dato">Abastores</p>
+                    <p class="perfil-dato">Carlos</p>
+                    <p class="perfil-dato">García Santacruz</p>
+                    <div class="perfil-toggle">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="perfil-toggle">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="verMas">
+                        <button class="boton-verMas" id="verMas-1">Ver más</button>
+                    </div>
+                    <div class="editar">
+                        <button class="boton-icono" id="editar-1"><i class="fi fi-rr-edit"></i></button>
+                    </div>
+                    <div class="eliminar">
+                        <button class="boton-icono" id="eliminar-1"><i class="fi fi-rr-trash"></i></button>
+                    </div>
+                </div>
+                <div class="perfil">
+                    <p class="perfil-dato">Abastores</p>
+                    <p class="perfil-dato">Carlos</p>
+                    <p class="perfil-dato">García Santacruz</p>
+                    <div class="perfil-toggle">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="perfil-toggle">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="verMas">
+                        <button class="boton-verMas" id="verMas-1">Ver más</button>
+                    </div>
+                    <div class="editar">
+                        <button class="boton-icono" id="editar-1"><i class="fi fi-rr-edit"></i></button>
+                    </div>
+                    <div class="eliminar">
+                        <button class="boton-icono" id="eliminar-1"><i class="fi fi-rr-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dialog founder datos -->
+    <div id="dialog-verMas" title="Datos perfil">
+        <div class="col-dialog">
+            <div class="dato">
+                <p class="titulo">Empresa</p>
+                <p class="contenido">Abastores</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Sector</p>
+                <p class="contenido">Sector</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Cargo</p>
+                <p class="contenido">CEO</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Expertise Inversor</p>
+                <p class="contenido">Expertise</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Empleados</p>
+                <p class="contenido">5-10</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Fact. Anual</p>
+                <p class="contenido">10k- 20k</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Com. Autónoma</p>
+                <p class="contenido">Álava</p>
+            </div>
+        </div>
+        <div class="col-dialog">
+            <div class="dato">
+                <p class="titulo">Nombre</p>
+                <p class="contenido">Nombre</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Apellidos</p>
+                <p class="contenido">Apellidos</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Teléfono</p>
+                <p class="contenido">Teléfono</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Email</p>
+                <p class="contenido">Email</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Web</p>
+                <p class="contenido">www.web.com</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">LinkedIn</p>
+                <p class="contenido">linkedin</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Validado</p>
+                <p class="contenido">Sí</p>
+                <p class="titulo">Baja</p>
+                <p class="contenido">No</p>
+            </div>
+        </div>
+        <div class="col-dialog">
+            <div class="dato">
+                <p class="titulo">Contacto vía</p>
+                <div class="pastillas">
+                    <p class="pastilla">WhatsApp</p>
+                    <p class="pastilla">Llamada Telefónica</p>
+                    <p class="pastilla">Email</p>
+                </div>
+            </div>
+            <div class="dato">
+                <p class="titulo">Puedo ayudar en</p>
+                <div class="pastillas">
+                    <p class="pastilla">Ayuda</p>
+                    <p class="pastilla">Ayuda</p>
+                    <p class="pastilla">Ayuda</p>
+                    <p class="pastilla">Ayuda</p>
+                    <p class="pastilla">Ayuda</p>
+                    <p class="pastilla">Ayuda</p>
+                    <p class="pastilla">Ayuda</p>
+                    <p class="pastilla">Ayuda</p>
+                </div>
+            </div>
+
+            <div class="dato">
+                <p class="titulo">Otra ayuda</p>
+                <p class="contenido">otra ayuda</p>
+            </div>
+            <div class="dato">
+                <p class="titulo">Descripcion</p>
+                <p class="contenido">Saas soluciones de Deep learning para industria de manufactura </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

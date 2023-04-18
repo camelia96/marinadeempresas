@@ -15,6 +15,7 @@
     --blanco: #fff;
     --gris-claro: #F2F2F2;
     --gris-medio: #D1D3D8;
+    --gris-azul-claro: #e6eaf4;
     --gris-azulado: #9FA9B4;
     --gris-oscuro:#7E858D;
     --gris-masOscuro:#444444;
@@ -114,9 +115,9 @@ button:hover  {
    #founders .perfil{    
     font-size: 6vw!important;
     margin: 4% 0!important;
-    min-width: 80%!important;
-    gap: 6%;
-    justify-content: start!important;
+    min-width: 100%!important;
+    padding: 0;
+    justify-content: space-between!important;
     align-items: center;
    }
 
@@ -249,11 +250,14 @@ button:hover  {
         background-repeat: no-repeat;
         border-radius: 30px;
         top: 40%!important;
-        max-height: 25px!important;
-        max-width: 25px!important;
+        min-width: 6vw;
+        min-height: 3.5vh;
         margin-right: 2%!important;
     }
 
+    #dialog-perk .botones button {
+        min-height: 5vh;
+    }
     /* Reserva puesto */
     #container-reserva .container {
         margin: 10%!important;
@@ -353,6 +357,130 @@ button:hover  {
     #container-perfil .form-contacto {
         margin: 10% 0!important;
     }
+
+    
+    /* Editar perfil */
+    #container-editar form {
+        flex-direction: column;
+        font-size: 5vw!important;
+    }
+
+    #container-editar input {
+        width: auto!important;
+        font-size: 4vw!important;
+        height: 5vh!important;
+        
+    }
+    #container-editar label {
+        width: 60%!important;
+    }
+
+    #container-editar h1 {
+        font-size: 7vw;
+    }
+
+    #container-editar #guardar-perfil{
+        font-size: 5vw!important;
+        width: auto!important;
+        padding: 2% 3%!important;
+        margin: 5% 0;
+    }
+
+    #container-editar textarea, #container-editar select {
+        min-width: 58%;
+    }
+
+    
+    /* Admin */
+    #container-admin #menu-admin {
+        display: inherit!important;
+        font-size: 4vw;
+        margin: 5%;
+    }
+    #container-admin #menu-admin p {
+        margin: 0;
+    }
+
+    #container-admin #menu-admin button {
+        margin: 0!important;
+        font-size: 4vw!important;
+        min-width: 25vw;
+        margin:  3% 0!important;
+    }
+
+    #container-admin #menu-admin form input {
+        font-size: 2.5vw!important;
+        height: 4vh!important;
+        min-width: 80%;
+    }
+
+    #container-admin  .perfil {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        font-size: 3vw!important;
+        padding: 5%;
+        width: auto!important;
+
+    }
+
+    #container-admin .perfil:first-child {
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+
+    #container-admin .perfil-dato {
+        margin: 0;
+        width: 100%;
+        font-size: 4vw!important;
+    }
+
+
+    #container-admin .perfil-dato:first-child {
+        font-weight: bold;
+        font-size: 6vw!important;
+        margin-bottom: 5%;
+    }
+
+    #container-admin .titulos {
+        display: none!important;
+    }
+
+    #container-admin .verMas, #container-admin .boton-verMas {
+        margin-top: 4%;
+        min-width: 100%;
+    }
+     #container-admin .editar,  #container-admin .eliminar, #container-admin .perfil-toggle {
+        display: none;
+    }
+
+    #container-admin .boton-verMas {
+        min-height: 8.5vw;
+    }
+    
+    /* Dialog Ver Más */
+    #dialog-verMas {
+        flex-direction: column;
+        font-size: 3vw!important;
+    }
+
+    #dialog-verMas .col-dialog {
+        width: 100%!important;
+    }
+    #dialog-verMas .dato {
+        align-items: start;
+        flex-direction: row!important;
+    }
+
+    #dialog-verMas .dato > * {
+        width: 30vw!important;    
+        margin-top: 0;
+        margin-bottom: 10%!important;
+    }
+
+    
+
+    
    /* Footer */ 
    footer {
     text-align: center;
@@ -690,7 +818,7 @@ nav .botones i {
 
 /* Dialog Perk */
 #dialog-perk {
-    margin: 3%;
+    margin: 3% 5%;
 }
 
 #dialog-perk .sector {
@@ -724,7 +852,8 @@ nav .botones i {
     background-color: var(--azul-medio);
     color: var(--blanco);
     padding: 1.5% 3%;
-    margin-right: 4%;
+    font-family: 'Stratos';
+    margin: 0 0 0 0;
 }
 
 /* Dialog GENERAL */
@@ -768,7 +897,7 @@ nav .botones i {
 #container-reserva {
     margin: 5% 0;
     position: relative;
-    min-height: auto;
+    min-height: 60vh;
 }
 #container-reserva .container{
     display: flex;
@@ -1018,7 +1147,7 @@ nav .botones i {
 #container-perfil form > div {
     display: flex;
 }
-#container-perfil form input, textarea{
+#container-perfil form input,#container-perfil textarea{
     border: none;
     width: 100%;
     height: 4vh;
@@ -1044,6 +1173,335 @@ nav .botones i {
     margin-top: 4%;
 }
 
+/* Editar perfil */
+#container-editar {
+    margin: 3% 5%;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    min-height: auto;
+}
+#container-editar form{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    margin:  3% 0;
+}
+#container-editar .col-editar {
+    width: 100%;
+}
+
+#container-editar .dato {
+    display: flex;
+    align-items: start;
+    margin-bottom: 5%;
+    justify-content: space-evenly;
+}
+
+#container-editar label {
+    color: var(--gris-oscuro);
+    width: 10vw;
+}
+
+#container-editar input, #container-editar textarea, #container-editar select {
+    border: none;
+    margin-left: 2%;
+    font-family: 'Stratos';
+}
+
+#container-editar input {
+    height: 3vh;
+    width: 12vw;
+    padding: 0 3%;
+}
+#container-editar textarea, #container-editar select {
+    width: 13.5vw;
+}
+
+#container-editar #guardar-perfil {
+    border: none;
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+    font-weight: bold;
+    font-family: 'Stratos';
+    width: 10vw;
+    font-size: 1vw;
+    padding: 1% 2%;
+}
+
+
+/* Admin */
+#container-admin {
+    min-height: auto;
+    position: relative;
+    margin: 3% 5%;
+    font-size: 1vw;
+    overflow-x: hidden;
+}
+
+#container-admin #menu-admin {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+#container-admin #menu-admin button {
+    border: none;
+    font-family: 'Stratos';
+    padding: 0.5% 1%;
+    font-weight: bold;
+    font-size: 1vw;
+}
+#container-admin .boton-inversores {
+    background-color: var(--azul-fuerte);
+    color: var(--blanco);
+}
+#container-admin .boton-startups {
+    background-color: var(--azul-extra);
+    color: var(--negro);
+}
+#container-admin #menu-admin form, #menu-admin i {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+#container-admin #menu-admin form input {
+    border: none;
+    height: 4vh;
+    width: 30vw; 
+    padding-left: 3%;
+}
+#container-admin #menu-admin form input::placeholder {
+    color: var(--azul-extra);
+    font-family: 'Stratos';
+}
+
+#container-admin .boton-icono {
+    border: none;
+    background: transparent;
+    color: var(--azul-fuerte);
+    font-size: 1.5vw;
+}
+
+#container-admin #lista {
+    margin-top: 3%;
+}
+
+#container-admin .titulos, .perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+#container-admin .titulos > *, .perfil > * {
+    width: 7%;
+}
+#container-admin .titulos > *:first-child, .perfil > *:first-child {
+    width: 12%;
+}
+#container-admin .titulos > *:nth-child(3), .perfil > *:nth-child(3) {
+    width: 20%;
+}
+#container-admin .titulos {
+
+    background: var(--blanco);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: 2px solid var(--azul-medio);
+    color: var(--azul-medio);
+}
+
+#container-admin .perfil:nth-child(odd) {
+
+    background: var(--blanco);
+}
+#container-admin .perfil:nth-child(even) {
+
+    background: var(--gris-azul-claro);
+}
+
+#container-admin .titulo, .perfil-dato {
+    padding:1% 0 1% 0;
+}
+
+#container-admin .editar, #container-admin .eliminar {
+    text-align: center;
+}
+
+#container-admin .boton-verMas {
+    background-color: var(--azul-medio);
+    border: none;
+    padding: 1% 3%;
+    color: var(--blanco);
+    font-family: 'Stratos';
+    font-weight: bold;
+    width: 6vw;
+    height: 3.5vh;
+    font-size: 1vw;
+}
+
+/* Admin - Toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.5vw;
+    height: 1.9vw;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gris-azulado);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 4px;
+    bottom: 12%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--azul-fuerte);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--azul-fuerte);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* Dialog GENERAL */
+.ui-widget.ui-widget-content {
+    font-family: 'Stratos';
+    font-size: 1vw;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid var(--gris-masOscuro)!important;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    border: none;
+    border-radius: none;
+    background: none;
+    padding: 2% 5%!important;
+    font-size: 1.5vw;
+    border-bottom: 2px solid var(--gris-masOscuro);
+    color: var(--azul-medio);
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-radius: 20px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    border-radius: 30px;
+    top: 45%!important;
+    height: 40%!important;
+    width: 3%!important;
+    margin-right: 2%!important;
+}
+
+.ui-button .ui-icon {
+
+    background-image: url(../img/cancelar.png)!important;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ui-button {
+    background-color: var(--azul-medio)!important;
+    border: none!important;
+}
+
+/* Dialog ver más - inversores */
+#dialog-verMas {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-size: 1vw;
+}
+
+#dialog-verMas .col-dialog {
+    width: 50%;
+}
+
+#dialog-verMas .dato, .pastillas {
+    display: flex;
+    gap: 3%;
+}
+#dialog-verMas .col-dialog:last-child > .dato {
+    flex-direction: column;
+}
+
+
+#dialog-verMas .titulo {
+    margin-bottom: 0;
+    margin-right: 3%;
+}
+#dialog-verMas .pastillas {
+    flex-wrap: wrap;
+}
+
+#dialog-verMas .pastilla {
+    background-color: var(--gris-claro);
+    padding: 2% 3%;
+    font-weight: bold;
+    border-radius: 30px;
+    margin: 2% 0;
+}
+
+#dialog-verMas .titulo {
+    color: var(--gris-oscuro);
+    font-weight: 500;
+}
+
+#dialog-verMas .contenido {
+    color: var(--gris-masOscuro);
+    font-weight: bold;
+}
 
 /* Footer */
 footer {
