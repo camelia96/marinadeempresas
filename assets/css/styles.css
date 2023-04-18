@@ -13,6 +13,7 @@
     --azul-aux: #B6CCFA;
     --azul-extra: #95B3F4;
     --blanco: #fff;
+    --gris-masClaro: #f6f6f6;
     --gris-claro: #EDEDED;
     --gris-medio: #E1DEDE;
     --gris-oscuro:#7D7C7C;
@@ -81,7 +82,7 @@ nav .titulo {
     width: 100%;
     margin-bottom: 3%;
     font-size: 4vw!important;
-    min-height: 6vh;
+    min-height: 8vh;
 
    }
    #filtros #amount {
@@ -105,8 +106,9 @@ nav .titulo {
     width: 100%!important;
    }
 
-   #filtros #slider-range {
+   #filtros #slider-range, #ronda-range, #premoney-range {
     width: 98%;
+    min-height: 3em!important;
 
    }
    #filtros #amount {
@@ -137,6 +139,12 @@ nav .titulo {
 
     }
    
+    .ui-slider .ui-slider-handle {
+        min-width: 5em!important;
+        min-height: 5em!important;
+        top: -30%!important;
+
+    }
 
    /* Categorias (Inversores y parte de startups)*/
    #categorias {
@@ -423,33 +431,30 @@ nav .titulo {
         font-size: 4vw!important;
     }
 
+    #container-admin .perfil-dato:first-child {
+        font-weight: bold;
+        font-size: 6vw!important;
+        margin-bottom: 5%;
+    }
+
     #container-admin .titulos {
         display: none!important;
     }
 
-    #container-admin .boton-icono {
-        font-size: 5vw!important;
-        color: var(--negro)!important;
-        margin: 0!important;
+    #container-admin .verMas, #container-admin .boton-verMas {
+        margin-top: 4%;
+        min-width: 100%;
+    }
+     #container-admin .editar,  #container-admin .eliminar, #container-admin .perfil-toggle {
+        display: none;
     }
 
-    #container-admin .boton-icono i {
-        display: flex;
-        font-weight: bold;
+    #container-admin .boton-verMas {
+        min-height: 8.5vw;
+        font-size: 4vw!important;
     }
 
-    #container-admin .editar, .eliminar {
-        background-color: var(--azul-aux);
-        width: 100%!important;
-        display: flex;
-        align-items: center;
-        height: 5vh;
-        justify-content: center;
-    }
-
-    #container-admin .editar {
-        margin: 5% 0;
-    }
+   
 
     /* Dialogos  */
     .ui-widget.ui-widget-content {
@@ -670,7 +675,7 @@ footer a {
     background: var(--gris-medio);
     border: none;
     border-radius: 30px;
-    min-height: 1vh;
+    min-height: 1em;
     margin: 2% 2% 0px 0px;
 }
 
@@ -680,10 +685,17 @@ footer a {
 
 }
 
+.ui-slider .ui-slider-handle {
+    width: 1.5em!important;
+    height: 1.5em!important;
+}
+
 .ui-state-default, .ui-widget-content .ui-state-default {
-    background: var(--azul-medio)!important;
+    background-image: url('../img/lavado-en-seco.png')!important;
+    background-size: cover!important;
+    background-position: center!important;
     border: none!important;
-    border-radius: 30px;
+    border-radius: 100%;
 }
 
 /* Colores placeholders */
@@ -1271,7 +1283,7 @@ footer a {
 #container-admin .boton-icono {
     border: none;
     background: transparent;
-    color: var(--azul-fuerte);
+    color: var(--azul-medio);
     font-size: 1.5vw;
 }
 
@@ -1283,20 +1295,17 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
 }
 #container-admin .titulos > *, .perfil > * {
-    width: 8vw;
+    width: 14%;
 }
-#container-admin .titulos > div, .perfil > div {
-    width: 4vw;
-}
-
 #container-admin .titulos {
 
     background: var(--blanco);
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    border-bottom: 3px solid var(--azul-extra);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: 2px solid var(--azul-extra);
     color: var(--azul-medio);
 }
 
@@ -1306,11 +1315,11 @@ footer a {
 }
 #container-admin .perfil:nth-child(even) {
 
-    background: var(--gris-medio);
+    background: var(--gris-masClaro);
 }
 
 #container-admin .titulo, .perfil-dato {
-    padding:1% 0 1% 3%;
+    padding:1% 0 1% 0;
 }
 
 
@@ -1325,6 +1334,71 @@ footer a {
     height: 3.5vh;
     font-size: 1vw;
 }
+
+ 
+/* Admin - Toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.5vw;
+    height: 1.9vw;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gris-medio);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 4px;
+    bottom: 10%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--azul-fuerte);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--azul-fuerte);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
 
 /* Dialog GENERAL */
 .ui-widget.ui-widget-content {
